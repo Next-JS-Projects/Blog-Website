@@ -45,50 +45,52 @@
   font-weight: bold;
 }
 
-.mainnav ul li:hover {
-  color: rgb(252, 159, 20);
+.mainnav ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+.mainnav ul li a:hover {
+  color: rgb(180, 110, 7);
 }
 
 .datalist {
   display: flex;
   align-items: center;
-  /* justify-content: center; */
+  justify-content: space-between;
   flex-direction: column;
   line-height: 25px;
-  padding: 2rem 0rem;
-  margin-top: 3rem;
-}
+  padding: 2rem 1rem;
+  margin-top: 2rem;
+} 
 
-.datalist h2{
-  text-align: left;
-  width: 443px;
+.datalist h2 {
+  /* text-align: left; */
+  width: 100%;
+  text-align: center;
   line-height: 50px;
-}
-
-.dataitem {
-  text-align: left;
   margin-top: 1rem;
 }
 
-/* Enable hover only on non-touch devices */
-@media (hover: hover) and (pointer: fine) {
-  .card:hover {
-    background: rgba(var(--card-rgb), 0.1);
-    border: 1px solid rgba(var(--card-border-rgb), 0.15);
-  }
-
-  .card:hover span {
-    transform: translateX(4px);
-  }
+.datalist h3 {
+  /* text-align: left; */
+  width: 100%;
+  line-height: 40px;
+  margin-top: 1rem;
 }
 
-@media (prefers-reduced-motion) {
-  .thirteen::before {
-    animation: none;
-  }
-
-  .card:hover span {
-    transform: none;
-  }
+.dataitem a {
+  text-decoration: none;
+  color: black;
 }
 
+.dataitem {
+  margin-top: 1.5rem;
+}
+
+.myImg {
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px red;
+  display: block;
+  margin: 1rem auto;
+}
