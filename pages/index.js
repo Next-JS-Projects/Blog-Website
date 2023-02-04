@@ -1,10 +1,6 @@
 import Head from "next/head";
-import Image from "next/image";
-import { Inter } from "@next/font/google";
+// import Image from "next/image";
 import styles from "@/styles/Home.module.css";
-import About from "./about";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
@@ -22,7 +18,14 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1> Code Blogger</h1>
-        <Image
+        {/*<Image
+          className={styles.myImg}
+          src="/coder.jpg"
+          alt=""
+          width={237}
+          height={158}
+        />*/}
+        <img
           className={styles.myImg}
           src="/coder.jpg"
           alt=""
