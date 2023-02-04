@@ -89,7 +89,8 @@
 }
 
 .myImg {
-  border-radius: 10px;
+  width: 157px;
+  border-radius: 92px;
   box-shadow: 2px 2px 5px red;
   display: block;
   margin: 1rem auto;

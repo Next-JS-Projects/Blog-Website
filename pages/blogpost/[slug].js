@@ -11,6 +11,10 @@ const Slug = (props) => {
   const [blog, setBlog] = useState(props.myBlog);
   const router = useRouter();
 
+  function createMarkup(content) {
+    return { __html: content };
+  }
+
   // useEffect(() => {
   //   if (!router.isReady) return;
   //   const { slug } = router.query;
@@ -28,7 +32,7 @@ const Slug = (props) => {
       <main>
         <h1>{blog && blog.title}</h1>
         <hr />
-        <p>{blog && blog.content}</p>
+        {blog && <p dangerouslySetInnerHTML={createMarkup(blog.content)}></p>}
       </main>
     </div>
   );

@@ -1,0 +1,60 @@
+.container {
+  max-width: 75vw;
+  min-height: 60vh;
+  margin: auto;
+  margin-top: 2rem;
+  border: 1px solid rgb(248, 208, 208);
+  box-shadow: 2px 2px 5px rgb(48, 184, 129);
+}
+
+.container h2 {
+  margin: 2rem;
+}
+
+.container label {
+  font-size: 18px;
+  text-align: left;
+  display: block;
+  max-width: 41vw;
+}
+
+.container input {
+  font-size: 22px;
+  display: block;
+  margin-top: 10px;
+  max-width: 41vw;
+  width: 100%;
+}
+
+.container textarea {
+  font-size: 14px;
+  display: block;
+  max-width: 40vw;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.container button {
+  color: rgb(48, 184, 129);
+  width: 100px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid rgb(48, 184, 129);
+  margin: 8px 0px 50px 0px;
+  cursor: pointer;
+}
+
+.container button:hover {
+  background-color: rgb(48, 184, 129);
+  color: white;
+}
+
+.mb3 {
+  margin-bottom: 21px;
+  /* padding: 10px; */
+}
+
+.formlabel {
+  margin: 0px 14px;
+}
